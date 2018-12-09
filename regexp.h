@@ -82,7 +82,6 @@ bool regexp_match(const regexp_t *re, const char *str);
  *  * if suffix is not NULL, the parser will try to find a suffix string in
  *  the regexp with no wildcard (e.g /(.*)mysuffix$/)
  */
-__attribute__((nonnull(1,3)))
 bool regexp_parse_str(const clstr_t *str, buffer_t *prefix, buffer_t *re,
                       buffer_t *suffix, bool *cs);
 
